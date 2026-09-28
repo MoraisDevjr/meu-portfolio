@@ -1,0 +1,235 @@
+body {
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+nav a { /*pegue os <a> que estão dentro do <nav>*/
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: #00bfff;
+    color: white;
+}
+
+
+section {
+padding: 40px;
+max-width: 900px; /*limita a largura da seção*/
+margin:auto; /*centraliza a seção*/
+
+}
+
+h1 {
+    font-size: 50px; /* aumenta o tamanho do titulo principal*/
+    font-family: Arial, sans-serif;
+}
+nav {
+    background-color: #222; /*muda o fundo do menu*/
+    padding: 20px; /* cria espaços entre o menu*/
+    border-radius: 10px; /*deixa os cantos arredondados*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /*cria uma sombra no menu*/
+    position: sticky;
+    top: 0;
+    /*0       → deslocamento horizontal
+4px     → deslocamento vertical
+10px    → desfoque da sombra
+rgba... → cor/transparência*/
+}
+
+p {
+    line-height: 1.6; /* aumenta o espaço entre as linhas*/
+}
+
+.projeto-link {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.instagram-link {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+.instagram-link{
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.instagram-link:hover{
+    background-color: #00bfff;
+}
+
+.contato-link {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+
+.contato-link:hover {
+    background-color: #00bfff;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+   
+}
+
+li {
+    background-color: #222;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+li {
+    transition: 0.3s;
+}
+
+li:hover {
+    background-color: #00bfff;
+    color: white;
+}
+
+.projeto-link {
+    transition: 0.3s;
+}
+
+.projeto-link:hover {
+
+    background-color:#00bfff ;
+
+}
+
+.apresentacao {
+    padding: 60px 20px;
+}
+
+.apresentacao h1 {
+    font-size: 55px;
+}
+
+.apresentacao h1 span {
+    color: #00bfff;
+}
+
+.apresentacao p {
+    font-size: 24px;
+    color: #b3b3b3;
+    margin-top: 10px;
+}
+
+.botao {
+    display: inline-block; /* faz o link continuar ficando na mesma linha que outro link, mas permite trata-lo melhor como uma caixa.*/
+    padding: 12px 25px; /* cria espaços dentro do botão 12px em cima/baixo e 25px nas laterais*/
+    margin: 20px 5px; /* cria espaço fora do botão: 20px em cima/baixo e 25 nas laterais.*/
+    background-color: #00bfff;/* cria o fundo azul*/
+    color: white;/* deixa a letra branca*/
+    text-decoration: none;/* tira o sublinhado feio*/
+    border-radius: 8px;/* arredonda os cantos*/
+}
+
+.sobre-conteudo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.sobre-conteudo img {
+    width: 350px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 2px solid #00bfff;
+}
+
+.sobre-texto {
+    text-align: left; /*centraliza o conteúdo, o texto*/
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.sobre-conteudo img:hover {
+
+    transform: scale(1.05);
+
+}
+
+.marcacao {
+    color: #00bfff;
+}
+
+.projeto-card {
+    background-color: #222;
+    padding: 25px;
+    max-width: 500px;
+    border-radius: 15px;
+    margin: auto; /*centraliza a caixa ou o bloco*/
+}
+
+.projeto-card a {
+    display: inline-block;
+    background-color: #00bfff;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+    .projeto-card a:hover {
+        transform: scale(1.05) translateY(-5px);
+    }
+
+    footer {
+        background-color: #222;
+        padding: 20px;
+        color: #b3b3b3;
+        margin-top: 40px;
+    }
+
+    .projeto-card {
+        transition: 0.3s;
+    }
+
+    .projeto-card:hover {
+        transform: translateY(-5px);
+    }
+
+    @media (max-width: 760px) {
+        .sobre-conteudo {
+            flex-direction: column;
+        }
+        .sobre-conteudo img {
+            max-width: 250px;
+        }
+        nav a {
+            padding: 8px 10px;
+            margin: 4px 2px;
+            font-size: 14px;
+        }
+        }
+/*  @media (max-width: 768px) significa Quando a tela tiver 768px de largura ou menos, aplique essas regras.*/
+ /* flex-direction: column muda o .sobre-conteudo de lado a lado para um embaixo do outro.*/
+
+    
